@@ -4,15 +4,19 @@
 
 # 安装Sentinel控制台
 
+在Sentinel Dashboard中配置规则之后重启应用就会丢失，本次学习使用不做持久化设置
+
 https://github.com/alibaba/Sentinel/releases
 本次下载的为1.8.4，放置于manager目录下
 
-启动控制台命令： java  -Dproject.name=sentinel-dashboard   -Dserver.port=8089  -Dcsp.sentinel.dashboard.
-server=localhost:8089 -jar .
-/manager/sentinel-dashboard-1.8.4.jar 
+启动控制台命令： java  -Dproject.name=sentinel-dashboard   -Dserver.port=8089  -Dcsp.sentinel.dashboard.server=localhost:8089 -jar ./manager/sentinel-dashboard-1.8.4.jar
 
 启动后控制台地址:
 http://localhost:8089
+
+默认账号密码:
+sentinel
+sentinel
 
 java -jar sentinel-dashboard.jar
 
