@@ -1,0 +1,9 @@
+spring:
+  main:
+    allow-circular-references: true
+  # 配置控制台信息
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8089
